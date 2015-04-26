@@ -1,4 +1,4 @@
-## The following pair of functions computates the inverse of an invertible matrix. Instead of computing the inverse repeatedly,
+## The following pair of functions computes the inverse of an invertible matrix. Instead of computing the inverse repeatedly,
 ## the functions help the process by caching the inverse and first check its value in the cache on subsequent requests before
 ## proceeding with a computation.
 
