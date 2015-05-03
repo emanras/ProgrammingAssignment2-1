@@ -54,7 +54,6 @@ cacheSolve <- function(mxlist, ...) {
 
         ## 	Othervise, if the cached matrix is NULL, compute the inverse matrix obtained through the input matrix object mx
         data <- mxlist$get()	## retrieve the values of the matrix out of the matrix object
-        im <- solve(data, ...) %*% data		## compute the input matrix' inverse (assume it is invertible)
-        mxlist$setinverse(im)	## cache the new value of the inverse matrix
+        im <- solve(data, ...) 	## compute the input matrix' inverse (assume it is invertible) (solve(data, ...) %*% data to verify)
         im
 }
